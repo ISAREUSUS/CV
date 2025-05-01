@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Hazhienko Kyrylo CV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+<body>
+<div class="main">
+<div class="div-style profile">
+<img src="{{ url_for('static', filename='photo_2025-04-11_01-20-20.jpg') }}" class="photo" >
+<div>
+<h1>{{name}}</h1>
+<h3>{{position}}</h3>
+<h2>contacts</h2>
+<ul>
+    {% for contact, link in contacts %}
+        {% if link %}
+            <li><a href={{link}}>{{contact}}</a></li>
+        {% else %}
+            <li>{{contact}}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+</div>
+</div>
+<div class = "columns">
+    <div class="left-column">
+    <div class = "div-style">
+<h2>summary</h2>
+<p>{{summary}}</p>
+        </div>
+<div class = "div-style">
+<h2>skills</h2>
+<div class="table-container">
+<table border="1">
+    {% for i in range(0, skills|length, 3) %}
+        <tr>
+            {% for j in range(3) %}
+                {% if i + j < skills|length %}
+                    <td>{{ skills[i + j] }}</td>
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+</div>
+</div>
+<div class = "div-style">
+<h2>projects</h2>
+{% for project, link in projects %}
+    <a href={{link}}>{{project}}</a>
+{%endfor%}
+</div>
+    </div>
+    <div class="right-column">
+<div class = "div-style">
+<h2>Education</h2>
+        <ul>
+            {% for e in education %}
+                <li>{{e}}</li>
+            {%endfor%}
+        </ul>
+</div>
+<div class = "div-style">
+        <h2>facts about 3D design</h2>
+            {% for fact in facts %}
+                <p>{{fact}}</p>
+            {%endfor%}
+        </div>
+
+    </div>
+</div>
+</div>
+</body>
+</html>

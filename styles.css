@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: "Jura", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+   }
+
+.main{
+    width: 50%;
+    margin: auto;
+    background-image: linear-gradient(45deg, rgb(73, 160, 30) 0%, rgb(73, 160, 30) 6%,rgb(88, 141, 55) 6%, rgb(88, 141, 55) 11%,rgb(103, 122, 81) 11%, rgb(103, 122, 81) 55%,rgb(118, 103, 106) 55%, rgb(118, 103, 106) 81%,rgb(132, 84, 131) 81%, rgb(132, 84, 131) 83%,rgb(147, 65, 156) 83%, rgb(147, 65, 156) 92%,rgb(162, 46, 182) 92%, rgb(162, 46, 182) 95%,rgb(177, 27, 207) 95%, rgb(177, 27, 207) 100%),linear-gradient(112.5deg, rgb(73, 160, 30) 0%, rgb(73, 160, 30) 6%,rgb(88, 141, 55) 6%, rgb(88, 141, 55) 11%,rgb(103, 122, 81) 11%, rgb(103, 122, 81) 55%,rgb(118, 103, 106) 55%, rgb(118, 103, 106) 81%,rgb(132, 84, 131) 81%, rgb(132, 84, 131) 83%,rgb(147, 65, 156) 83%, rgb(147, 65, 156) 92%,rgb(162, 46, 182) 92%, rgb(162, 46, 182) 95%,rgb(177, 27, 207) 95%, rgb(177, 27, 207) 100%),linear-gradient(67.5deg, rgb(73, 160, 30) 0%, rgb(73, 160, 30) 6%,rgb(88, 141, 55) 6%, rgb(88, 141, 55) 11%,rgb(103, 122, 81) 11%, rgb(103, 122, 81) 55%,rgb(118, 103, 106) 55%, rgb(118, 103, 106) 81%,rgb(132, 84, 131) 81%, rgb(132, 84, 131) 83%,rgb(147, 65, 156) 83%, rgb(147, 65, 156) 92%,rgb(162, 46, 182) 92%, rgb(162, 46, 182) 95%,rgb(177, 27, 207) 95%, rgb(177, 27, 207) 100%),linear-gradient(90deg, rgb(24, 15, 143),rgb(170, 57, 157)); background-blend-mode:overlay,overlay,overlay,normal;
+    padding: 20px;
+    border: 10px solid #5B002F;
+    border-radius: 20px;
+    }
+
+h1, h2, h3{
+  font-family: "Special Gothic Condensed One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.photo{
+    height: 90%;
+    width: auto;
+    border-radius: 20px;
+}
+
+.div-style{
+    background-color: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px;
+}
+.profile{
+    display: flex;
+    height: 500px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left-column, .right-column{
+    width: 50%;
+}
+
+.table-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  border-radius: 20px;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: center; /* текст по центру */
+}
+
+table, th, td {
+  border: none; /* прибираємо межі */
+}
+
+a{
+    color: white;
+    text-decoration: None;
+
+}
+a:hover{
+    color: #d03ccc;
+}
+
+a::after{
+    content: "🔗";
+}
+
